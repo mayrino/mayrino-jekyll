@@ -1,0 +1,30 @@
+// Load Bootstrap variables and mixins
+@import "../bootstrap@4.4.1/functions";
+@import "../bootstrap@4.4.1/variables";
+@import "../bootstrap@4.4.1/mixins";
+
+//load Bootstrap scss compoments
+@import "../bootstrap@4.4.1/reboot";
+@import "../bootstrap@4.4.1/nav";
+@import "../bootstrap@4.4.1/utilities";
+
+
+//load mj  compoments
+
+@import "variables";
+@import "animation";
+@import "navbar"; 
+
+
+
+/*
+ * Base structure
+ */
+//fusv-disable
+$body-color: #333333;
+$body-bg: #f0f0f0;
+
+body{
+    background-color: $body-bg;
+    color:$body-color;
+}

@@ -1,0 +1,86 @@
+# Where things are
+source              :  "site"
+destination         : ./_gh_pages
+collections_dir     : _collections
+plugins_dir         : _plugins
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir: _sass/mayrino
+  style: compressed
+collections:
+  posts:
+    output          : true
+
+# Handling Reading
+safe                : false
+include             : [".htaccess"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter : true
+
+# Filtering Content
+show_drafts         : null
+limit_posts         : 0
+future              : false
+unpublished         : false
+
+# Plugins
+whitelist           : []
+plugins             : 
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Conversion
+markdown            : kramdown
+highlighter         : rouge
+excerpt_separator   : "\n\n"
+incremental         : true
+timezone            : Asia/Shanghai
+
+
+# Serving
+port                : 9090
+host                : localhost
+baseurl             : "" # does not include hostname
+url                 : "https://mayrino.com"
+show_dir_listing    : false
+
+# Outputting
+permalink           : pretty
+paginate_path       : /page:num
+
+
+quiet               : false
+verbose             : false
+defaults            : []
+
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
+
+kramdown:
+  auto_ids          : true
+
+#Custom variables
+
+title:              "找个毛 毛绒制品 敏捷毛绒  找个样 stuff faux fur artificial fur garment "
+description:        "毛绒 人造毛皮 长毛绒 找样 面料 超柔 羊羔毛 羊剪绒 狐狸毛 兔毛 颗粒"
+author:            "Samon Xie"
+keywords:           "毛绒 人造毛皮 长毛绒 找样 找毛绒 面料 超柔 37 三七颗粒 纺织 摇粒绒 金丝绒 舒棉绒 爱美丽 麦穗  土耳其 巴黎春天  小金雕 小金貂  羊羔毛 羊剪绒 狐狸毛 兔毛 颗粒 帽子 毛毯 鞋子 围脖 围巾 耳套 cushion blanket hat pirrow faux fur fake fur artificail fur Sherpa knittd fabric plush fur high pile woolen plush High-pile jacquard printed jacquard dog cony fox mink raccoon teddy bear rabbit dallas boa color discharge dischargea discharging differential acrylic fabric modacrylic fabric repreve recycled poly fabric "
+lang :              "zh_CN"
+
+cdn:
+  # See https://www.srihash.org for info on how to generate the hashes
+  bootstrap-css:              "https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+  bootstrap-css_hash:         "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  bootstrap-js:               "https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+  bootstrap-js_hash:          "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  bootstrap-js_bundle:        "https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+  bootstrap-js_bundle_hash:   "sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+  jquery:                     "https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.min.js"
+  jquery_hash:                "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

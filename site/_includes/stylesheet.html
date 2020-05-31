@@ -1,0 +1,8 @@
+<!-- Bootstrap core CSS -->
+{%- if jekyll.environment == "production" or jekyll.environment == "netlify" %}
+ <link rel="stylesheet" href="{{ site.cdn.bootstrap-css }}" integrity="{{ site.cdn.bootstrap-css_hash }}" crossorigin="anonymous">
+{% else %}
+
+<link href="{{ site.baseurl }}/assets/css/mayrino.css" rel="stylesheet">
+{% endif -%}
+
